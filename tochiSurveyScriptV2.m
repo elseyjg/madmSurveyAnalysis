@@ -6,7 +6,9 @@ taskType = '2Opt2Att';
 %Redo Analyses?
 redoFlag = 0;
 
-%Which machine in use?
+% Hello world!
+
+%Which computer in use?
 computerName = getComputerName;
 if strcmp(computerName, 'desktop-ne5dnh1')|strcmp(computerName, 'newComputerName')== 1;
     paths.basePath = 'C:\Users\tochi\OneDrive\Documents\MATLAB\data\madm_2Opt2Att';
