@@ -13,6 +13,18 @@ computerName = getComputerName;
 if strcmp(computerName, 'desktop-ne5dnh1')|strcmp(computerName, 'newComputerName')== 1;
     paths.basePath = 'C:\Users\tochi\OneDrive\Documents\MATLAB\data\madm_2Opt2Att';
     paths.statsPath = fullfile(paths.basePath, 'stats\');
+elseif strcmp(computerName,'jacobs-macbook-pro.local')| strcmp(computerName,'jacobs-mbp') == 1;
+    paths.basePath = '/Users/jacobelsey/OneDrive - Johns Hopkins/Data/madm_4Opt4Att';
+    paths.dataPath = fullfile(paths.basePath,'data');
+    paths.statsPath = fullfile(paths.basePath,'stats');
+    paths.figurePath = fullfile(paths.basePath,'figures');
+    paths.resultsPath = fullfile(paths.basePath,'results');
+elseif strcmp(computerName,'mbi-vs-labpc1') == 1;
+    paths.basePath   = 'C:\Users\jelsey2\Documents\Data\madm_4Opt4Att';
+    paths.dataPath   = fullfile(paths.basePath,'data');
+    paths.statsPath = fullfile(paths.basePath,'stats');
+    paths.figurePath = fullfile(paths.basePath,'figures');
+    paths.resultsPath = fullfile(paths.basePath,'results');
 else
     disp('no declared path for this computer')
     return
